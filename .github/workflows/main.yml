@@ -1,0 +1,12 @@
+# Trigger manually
+on:
+  workflow_dispatch:
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
+
+      - name: Print today's date
+        run: date
